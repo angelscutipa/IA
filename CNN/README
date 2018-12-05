@@ -1,0 +1,16 @@
+Este es la implementacion de una red Neuronal Convolucional, con el objetivo de realizar reconocimiento de imagenes, 
+se esta trabajando con la base de datos CIFAR10 el cual cuenta con 60000 imágenes a color de 32x32 que están divididas
+en 10 clases distintas; con 6000 imágenes por cada clase. Tiene 50000 imágenes de entrenamiento y 10000 imágenes de prueba. 
+CIFAR-10 se divide en cinco lotes de entrenamiento y un lote de prueba, cada uno con 10.000 imágenes.
+
+En la red neuronal que se ejecuta se puede apreciar que se realizan 5 epocas para el paso de entrenamiento.
+
+algunas funciones:
+EN la funcion de  input y distorsed_inputs se realiza la obtencion de la base de datos.
+En max_pool se realiza el polling un paso necesarion en las CNN .
+En loss obtiene la perdida.
+En las funciones conv_batch_norm y layer_batch_norm se realiza la normalizacion de los datos que hay en cada lote el cual
+nos sirve para entrenar a nuestra red.
+En la funcion layer se construye cada capa se construye cada capa.
+EN la funcion inferencia es la que tiene la estructura general de la red y la que nos mostrara los predcciones.
+En las funciones de evaluate y training  se realizan para evaluar y entrenar el modelo respectivamente.
